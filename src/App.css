@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --label-color: #8b9095;
+  --input-color: black;
+  --active-color: #1a73e8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0082bc;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.app-header {
+  margin-top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  margin: 0;
+  margin-left: 25px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: rgb(118, 187, 249);
+  border-radius: 5px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.char-lines {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.image-container {
+  position: relative;
+  display: inline;
+  margin-left: 150px;
+}
+
+.waldo-img {
+  width: 900px;
+  padding: 0;
+  z-index: 99;
+}
+
+.marker-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 100px;
+  align-items: center;
+}
+
+.marker {
+  width: 40px;
+  height: 40px;
+  border: red 3px dashed;
+}
+
+.find-marker {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: blue 3px dashed;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -999;
+  transition: opacity 1s linear;
+}
+
+.characterImg {
+  height: 75px;
+}
+
+.timer {
+  margin-right: 50px;
+}
+
+.timer-timer {
+  background-color: rgb(118, 187, 249);
+  padding: 0 30px;
+  border-radius: 5px;
+}
+
+.user-login {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(90, 90, 247);
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  align-items: center;
+}
+
+.login-container input {
+  width: 700px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 20px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+  background-color: rgb(41, 136, 220);
+}
+
+.login-container input:focus {
+  border-color: green;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  align-items: center;
+}
+
+form button {
+  border: none;
+  background-color: rgb(0, 238, 255);
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+form button:hover {
+  border: 2px black solid;
+}
+
+.leader {
+  display: flex;
+}
+
+.userLeader {
+  margin: 5px 5px;
+  letter-spacing: 2px;
+}
+
+.userLeader b span {
+  letter-spacing: normal;
+}

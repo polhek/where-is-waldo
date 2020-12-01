@@ -1,0 +1,12 @@
+// Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDI7clzPOlS0Tuf4FuT1GVNwoerT5SC0-I",
+    authDomain: "where-is-waldo-99e1e.firebaseapp.com",
+    databaseURL: "https://where-is-waldo-99e1e.firebaseio.com",
+    projectId: "where-is-waldo-99e1e",
+    storageBucket: "where-is-waldo-99e1e.appspot.com",
+    messagingSenderId: "909475830981",
+    appId: "1:909475830981:web:75eda288d5711c0f8424ac"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
